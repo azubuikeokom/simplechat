@@ -1,0 +1,8 @@
+INFO:server:server listeing ('::1', 9090, 0, 0)
+INFO:server:server listeing ('127.0.0.1', 9090)
+INFO:server:Accepted connection from <asyncio.TransportSocket fd=11, family=2, type=1, proto=0, laddr=('127.0.0.1', 9090), raddr=('127.0.0.1', 54944)>
+INFO:server:server listeing ('127.0.0.1', 9090)
+INFO:server:server listeing ('::1', 9090, 0, 0)
+INFO:server:server listeing ('::1', 9090, 0, 0)
+INFO:server:server listeing ('127.0.0.1', 9090)
+INFO:server:Accepted connection from <asyncio.TransportSocket fd=11, family=2, type=1, proto=0, laddr=('127.0.0.1', 9090), raddr=('127.0.0.1', 55102)>

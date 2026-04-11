@@ -1,0 +1,7 @@
+Username: simplechat:azu@gmail.com
+Receiver: simplechat:okom@gmail.com
+Content-Type: text
+Encoding: utf8
+Method: REGISTER
+
+hello there
