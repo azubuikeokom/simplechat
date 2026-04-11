@@ -24,29 +24,30 @@ class Parser:
         self._chat = Chat()
 
     def parse(self, msg:str) -> Chat:
-        split_msg = self.split_request_block(msg)
-        header_lines:list[str] = self.split_header_block(split_msg[0])
+        headers, msg = self.split_request_block(msg)
+        header_lines = self.split_header_block(headers)
+        self._chat.msg = msg
         for header_line in header_lines:
             if 'Username' in header_line:
                 match = self._username_pattern.match(header_line)
                 if match:
-                    self._chat.username = header_line.split(':',2)[-1]
+                    self._chat.username = header_line.split(':',2)[-1].strip()
             elif 'Receiver' in header_line:
                 match = self._receiver_pattern.match(header_line)
                 if match:
-                    self._chat.receiver = header_line.split(':',2)[-1]
+                    self._chat.receiver = header_line.split(':',2)[-1].strip()
             elif 'Content-Type' in header_line:
                 match = self._content_type.match(header_line)
                 if match:
-                    self._chat.content_type = header_line.split(':',1)[-1]
+                    self._chat.content_type = header_line.split(':',1)[-1].strip()
             elif 'Method' in header_line:
                 match = self._method.match(header_line)
                 if match:
-                    self._chat.method = header_line.split(':',1)[-1]
+                    self._chat.method = header_line.split(':',1)[-1].strip()
             elif 'Encoding' in header_line:
                 match = self._encoding.match(header_line)
                 if match:
-                    self._chat.encoding = header_line.split(':',1)[-1]
+                    self._chat.encoding = header_line.split(':',1)[-1].strip()
             else:
                 raise ParseError           
         return self._chat

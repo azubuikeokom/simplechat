@@ -80,3 +80,12 @@ INFO:__main__:Request block split ['Username: simplechat:azu@gmail.com\nReceiver
 INFO:__main__:Header block split ['Username: simplechat:azu@gmail.com', 'Receiver: simplechat:okom@gmail.com', 'Content-Type: text', 'Encoding: utf8', 'Method: REGISTER']
 INFO:__main__:Request block split ['Username: simplechat:azu@gmail.com\nReceiver: simplechat:okom@gmail.com\nContent-Type: text\nEncoding: utf8\nMethod: REGISTER', 'hello there']
 INFO:__main__:Header block split ['Username: simplechat:azu@gmail.com', 'Receiver: simplechat:okom@gmail.com', 'Content-Type: text', 'Encoding: utf8', 'Method: REGISTER']
+INFO:__main__:Request block split ['Username: simplechat:azu@gmail.com\nReceiver: simplechat:okom@gmail.com\nContent-Type: text\nEncoding: utf8\nMetho: REGISTER', 'hello there']
+INFO:__main__:Header block split ['Username: simplechat:azu@gmail.com', 'Receiver: simplechat:okom@gmail.com', 'Content-Type: text', 'Encoding: utf8', 'Metho: REGISTER']
+ERROR:__main__:ParseError: Parsing failed. Check Headers and their values
+INFO:__main__:Request block split ['Username: simplechat:azu@gmail.com\nReceiver: simplechat:okom@gmail.com\nContent-Type: text\nEncoding: utf8\nMethod: REGISTER', 'hello there']
+INFO:__main__:Header block split ['Username: simplechat:azu@gmail.com', 'Receiver: simplechat:okom@gmail.com', 'Content-Type: text', 'Encoding: utf8', 'Method: REGISTER']
+INFO:__main__:Request block split ['Username: simplechat:azu@gmail.com\nReceiver: simplechat:okom@gmail.com\nContent-Type: text\nEncoding: utf8\nMethod: REGISTER', 'hello there']
+INFO:__main__:Header block split ['Username: simplechat:azu@gmail.com', 'Receiver: simplechat:okom@gmail.com', 'Content-Type: text', 'Encoding: utf8', 'Method: REGISTER']
+INFO:__main__:Request block split ['Username: simplechat:azu@gmail.com\nReceiver: simplechat:okom@gmail.com\nContent-Type: text\nEncoding: utf8\nMethod: REGISTER', 'hello there']
+INFO:__main__:Header block split ['Username: simplechat:azu@gmail.com', 'Receiver: simplechat:okom@gmail.com', 'Content-Type: text', 'Encoding: utf8', 'Method: REGISTER']
